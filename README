@@ -1,7 +1,7 @@
 In order to build the Diff program and execute unit tests, run the following command first:
 > build
 
-This uses wget to download Maven (from: http://maven.apache.org/download.cgi#Installation).  
+This uses wget to download Maven (from here: http://maven.apache.org/download.cgi#Installation).  
 Then, it runs "mvn clean package", which downloads all transitive dependencies, builds a jar file, and executing all unit tests.
 
 Once this is done, you should be able to use the "run-diff" script, which takes 2 parameters (the full paths to the source and target files to diff).
