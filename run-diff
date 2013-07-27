@@ -1,2 +1,2 @@
 #!/bin/bash
-java -cp peak6-dev-test/target/peak6-dev-test-1.0-SNAPSHOT.jar com.peak6.devtest.Diff $1 $2
+java -cp jdiff/target/jdiff-1.0-SNAPSHOT.jar com.jdiff.Diff $1 $2
