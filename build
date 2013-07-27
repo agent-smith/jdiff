@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Download maven since it takes up a few extra MBs and I didn't want to put it in the tarball
+wget http://www.trieuvan.com/apache/maven/maven-3/3.1.0/binaries/apache-maven-3.1.0-bin.tar.gz
+tar xvf apache-maven-3.1.0-bin.tar.gz
+rm -f apache-maven-3.1.0-bin.tar.gz
+
+# Generate the jar file - this also runs unit tests
+cd peak6-dev-test
+../apache-maven-3.1.0/bin/mvn clean package
+
