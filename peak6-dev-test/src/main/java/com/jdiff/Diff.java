@@ -1,4 +1,4 @@
-package com.peak6.devtest;
+package com.jdiff;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,8 +18,8 @@ import java.util.concurrent.LinkedBlockingQueue;
  * <p/>
  * The set of sequences is given by:
  * lcs[i][j] = 0                              if i = M or j = N
- *           = lcs[i+1][j+1] + 1              if x[i]  = y[j]
- *           = max(lcs[i][j+1], lcs[i+1][j])  if x[i] != y[j]
+ * = lcs[i+1][j+1] + 1              if x[i]  = y[j]
+ * = max(lcs[i][j+1], lcs[i+1][j])  if x[i] != y[j]
  * <p/>
  * Then, once we build the LCS matrix, we trace back through it so we can print out the diff types along the way.
  * <p/>
@@ -43,7 +43,8 @@ public class Diff
      *
      * @param args file1 and file2
      */
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException
+    {
         String[] x = getLinesFromFile(new File(args[0]));
         String[] y = getLinesFromFile(new File(args[1]));
 
@@ -51,12 +52,14 @@ public class Diff
         System.out.println(lcsDiff.runDiff());
     }
 
-    private static String[] getLinesFromFile(File file) throws FileNotFoundException {
+    private static String[] getLinesFromFile(File file) throws FileNotFoundException
+    {
         Scanner sc = new Scanner(file);
 
         List<String> lines = new ArrayList<String>();
-        while (sc.hasNextLine()) {
-          lines.add(sc.nextLine());
+        while (sc.hasNextLine())
+        {
+            lines.add(sc.nextLine());
         }
 
         return lines.toArray(new String[lines.size()]);
@@ -68,7 +71,8 @@ public class Diff
      * @param x all lines for M side of matrix
      * @param y all lines for N side of matrix
      */
-    public Diff(String[] x, String[] y) {
+    public Diff(String[] x, String[] y)
+    {
         this.x = x;
         this.y = y;
 
@@ -83,14 +87,19 @@ public class Diff
      *
      * @return Initialized LCS matrix
      */
-    private int[][] buildLCS() {
+    private int[][] buildLCS()
+    {
         int[][] lcs = new int[M+1][N+1];
-        for (int i = M-1; i >= 0; i--) {
-            for (int j = N-1; j >= 0; j--) {
-                if (x[i].equals(y[j])) {
-                    lcs[i][j] = lcs[i+1][j+1] + 1;
+        for (int i = M-1; i>=0; i--)
+        {
+            for (int j = N-1; j>=0; j--)
+            {
+                if (x[i].equals(y[j]))
+                {
+                    lcs[i][j] = lcs[i+1][j+1]+1;
                 }
-                else {
+                else
+                {
                     lcs[i][j] = Math.max(lcs[i][j+1], lcs[i+1][j]);
                 }
             }
@@ -102,7 +111,8 @@ public class Diff
      * Walk the LCS matrix, keeping track of moves toward M and N, which determines which diff type ("a", "c", "d")
      * to use.
      */
-    public String runDiff() {
+    public String runDiff()
+    {
 
         StringBuilder result = new StringBuilder();
 
@@ -112,20 +122,28 @@ public class Diff
         List<Integer> moveN = new ArrayList<Integer>(N);
         int i = 0;
         int j = 0;
-        while (i < M && j < N) {
+        while (i<M && j<N)
+        {
 
             // keep moving across M and N until x[i] is the same as y[j]
-            if (x[i].equals(y[j])) {
+            if (x[i].equals(y[j]))
+            {
 
-                if (moveN.size() > 0) {
-                    if (i == j) {
+                if (moveN.size()>0)
+                {
+                    if (i == j)
+                    {
                         // moved across M and N an equal amount indicates a change ("c")
                         outputChanged(moveM, moveN, result);
-                    } else {
+                    }
+                    else
+                    {
                         // moved across N, but not M indicates an add ("a")
                         outputAdded(i, moveN, result);
                     }
-                } else if (moveN.size() == 0 && moveM.size() > 0) {
+                }
+                else if (moveN.size() == 0 && moveM.size()>0)
+                {
                     // moved across M, but not N indicates an delete ("d")
                     outputDeleted(moveM, j, result);
                 }
@@ -139,18 +157,23 @@ public class Diff
                 i++;
                 j++;
 
-            } else if (lcs[i+1][j] >= lcs[i][j+1]) {
+            }
+            else if (lcs[i+1][j]>=lcs[i][j+1])
+            {
                 // a line was removed or changed
-                outQueue.offer("< " + x[i++]);
+                outQueue.offer("< "+x[i++]);
                 moveM.add(i);
                 shouldPrintDashes = true;
 
-            } else {
+            }
+            else
+            {
                 // a line was added or changed
-                if (shouldPrintDashes) {
+                if (shouldPrintDashes)
+                {
                     outQueue.offer("---");
                 }
-                outQueue.offer("> " + y[j++]);
+                outQueue.offer("> "+y[j++]);
                 moveN.add(j);
                 shouldPrintDashes = false;
             }
@@ -160,19 +183,26 @@ public class Diff
         moveN.clear();
 
         // If there are left over lines (because M != N), then output the rest as "a" or "d".
-        while (i < M || j < N) {
-            if (i == M) {
-                outQueue.offer("> " + y[j++]);
+        while (i<M || j<N)
+        {
+            if (i == M)
+            {
+                outQueue.offer("> "+y[j++]);
                 moveN.add(j);
-            } else if (j == N) {
-                outQueue.offer("< " + x[i++]);
+            }
+            else if (j == N)
+            {
+                outQueue.offer("< "+x[i++]);
                 moveM.add(i);
             }
         }
 
-        if (moveM.isEmpty()) {
+        if (moveM.isEmpty())
+        {
             outputAdded(i, moveN, result);
-        } else {
+        }
+        else
+        {
             outputDeleted(moveM, j, result);
         }
         outputEntireQueue(outQueue, result);
@@ -187,7 +217,8 @@ public class Diff
      * @param moveM LHS of "c"
      * @param moveN RHS of "c"
      */
-    private void outputChanged(List<Integer> moveM, List<Integer> moveN, StringBuilder result) {
+    private void outputChanged(List<Integer> moveM, List<Integer> moveN, StringBuilder result)
+    {
         StringBuilder sb = new StringBuilder();
         appendWithCommaDelims(moveM, sb);
         sb.append("c");
@@ -199,10 +230,11 @@ public class Diff
     /**
      * Output "a", showing the added line numbers.
      *
-     * @param i LHS of "a"
+     * @param i     LHS of "a"
      * @param moveN RHS of "a"
      */
-    private void outputAdded(int i, List<Integer> moveN, StringBuilder result) {
+    private void outputAdded(int i, List<Integer> moveN, StringBuilder result)
+    {
         StringBuilder sb = new StringBuilder();
         sb.append(i).append("a");
         appendWithCommaDelims(moveN, sb);
@@ -214,9 +246,10 @@ public class Diff
      * Output "d", showing the deleted line numbers.
      *
      * @param moveM LHS of "d"
-     * @param j LHS of "d"
+     * @param j     LHS of "d"
      */
-    private void outputDeleted(List<Integer> moveM, int j, StringBuilder result) {
+    private void outputDeleted(List<Integer> moveM, int j, StringBuilder result)
+    {
         StringBuilder sb = new StringBuilder();
         appendWithCommaDelims(moveM, sb);
         sb.append("d").append(j);
@@ -229,13 +262,16 @@ public class Diff
      * For example, if moves=[3,4,5,6], then after this call, sb would be: "3,6"
      *
      * @param moves Subset of moves across M or N.
-     * @param sb StringBuilder result.
+     * @param sb    StringBuilder result.
      */
-    private void appendWithCommaDelims(List<Integer> moves, StringBuilder sb) {
+    private void appendWithCommaDelims(List<Integer> moves, StringBuilder sb)
+    {
         int nMoves = moves.size();
-        if (nMoves > 0) {
+        if (nMoves>0)
+        {
             sb.append(moves.get(0));
-            if (nMoves > 1) {
+            if (nMoves>1)
+            {
                 sb.append(",").append(moves.get(nMoves-1));
             }
         }
@@ -246,8 +282,10 @@ public class Diff
      *
      * @param queue The Queue to dequeue from.
      */
-    private void outputEntireQueue(Queue<String> queue, StringBuilder result) {
-        while (!queue.isEmpty()) {
+    private void outputEntireQueue(Queue<String> queue, StringBuilder result)
+    {
+        while (!queue.isEmpty())
+        {
             result.append(queue.remove()).append(NEW_LINE);
         }
     }
@@ -255,11 +293,15 @@ public class Diff
     /**
      * Handle edge cases for end of result.
      */
-    private StringBuilder cleanupEnding(StringBuilder result) {
-        if (result.length() < 4) {
+    private StringBuilder cleanupEnding(StringBuilder result)
+    {
+        if (result.length()<4)
+        {
             // wipe any residuals out
             result = new StringBuilder();
-        } else {
+        }
+        else
+        {
             result = result.deleteCharAt(result.length()-1);
         }
         return result;

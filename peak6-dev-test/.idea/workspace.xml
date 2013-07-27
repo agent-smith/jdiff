@@ -2,84 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9cfbb27-c114-40c2-b143-8ae67f2535ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/aether-api-0.9.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/aether-connector-wagon-0.9.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/aether-impl-0.9.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/aether-spi-0.9.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/aether-util-0.9.0.M2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/aopalliance-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/asm-3.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/cdi-api-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/commons-cli-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/guava-11.0.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/javax.inject-1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/jsr250-api-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/jsr305-1.3.9.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-aether-provider-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-artifact-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-compat-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-core-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-embedder-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-model-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-model-builder-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-plugin-api-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-repository-metadata-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-settings-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/maven-settings-builder-3.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/org.eclipse.sisu.inject-0.0.0.M2a.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/org.eclipse.sisu.plexus-0.0.0.M2a.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/plexus-cipher-1.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/boot/plexus-classworlds-2.4.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/plexus-component-annotations-1.5.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/plexus-interpolation-1.16.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/plexus-sec-dispatcher-1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/plexus-utils-3.0.10.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/sisu-guice-3.1.3-no_aop.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/slf4j-api-1.7.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/slf4j-simple-1.7.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/wagon-file-2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/wagon-http-2.4-shaded.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/wagon-provider-api-2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/peak6/devtest/Diff.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/peak6/devtest/DiffTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/NOTICE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/lib/ext/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../build" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/findbugs-idea.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/bin/m2.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/bin/mvn.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/bin/mvnDebug.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/bin/mvnDebug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/bin/mvn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/bin/mvnyjp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peak6-dev-test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../run-diff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/conf/settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../apache-maven-3.1.0/conf/logging/simplelogger.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/peak6-dev-test.iml" afterPath="$PROJECT_DIR$/jdiff.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/peak6/devtest/Diff.java" afterPath="$PROJECT_DIR$/src/main/java/com/jdiff/Diff.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/peak6/devtest/DiffTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/jdiff/DiffTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="peak6-dev-test.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/" />
+    <ignored mask="*.iml" />
     <file path="/App.java" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374706514757" ignored="false" />
     <file path="/Diff.java" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374716452068" ignored="false" />
     <file path="/AppTest.java" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374716132215" ignored="false" />
-    <file path="/pom.xml" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374707210474" ignored="false" />
+    <file path="/pom.xml" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374966632711" ignored="false" />
     <file path="/DiffTest.java" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374709928781" ignored="false" />
     <file path="/a.dummy" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374709567082" ignored="false" />
-    <file path="/Dummy.txt" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374949852330" ignored="false" />
+    <file path="/Dummy.txt" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374966506075" ignored="false" />
+    <file path="/fragment.java" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374966723693" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/compiler.xml" changelist="f9cfbb27-c114-40c2-b143-8ae67f2535ed" time="1374966837859" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,21 +85,45 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Diff.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/peak6/devtest/Diff.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jdiff/Diff.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="27" selection-start="6751" selection-end="6751" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1795#1803#0" expanded="true" />
-                <element signature="e#3134#3142#0" expanded="true" />
-              </folding>
+            <state line="221" column="27" selection-start="6743" selection-end="6743" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiffTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/peak6/devtest/DiffTest.java">
+      <file leaf-file-name="DiffTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jdiff/DiffTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="20" selection-start="1264" selection-end="1265" vertical-scroll-proportion="0.21067683">
+            <state line="30" column="10" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="9" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".name" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/.name">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="misc.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="52" selection-start="650" selection-end="650" vertical-scroll-proportion="0.29170638">
               <folding />
             </state>
           </provider>
@@ -182,9 +149,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/peak6/devtest/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/peak6/devtest/AppTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/peak6/devtest/DiffTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peak6/devtest/Diff.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -212,7 +179,7 @@
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="false" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
@@ -220,18 +187,17 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="peak6-dev-test" />
+              <option name="myItemId" value="jdiff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="peak6-dev-test" />
+              <option name="myItemId" value="jdiff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -241,7 +207,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="peak6-dev-test" />
+              <option name="myItemId" value="jdiff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -261,13 +227,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="devtest" />
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdiff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="peak6-dev-test" />
+              <option name="myItemId" value="jdiff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -287,46 +257,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="devtest" />
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdiff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Project" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="259" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="261" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="259" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="265" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1059" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1059" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="265" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="261" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.jdiff" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.DiffTest">
     <configuration default="false" name="DiffTest.testSame" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.peak6.devtest.*" />
+          <option name="PATTERN" value="com.jdiff.devtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="peak6-dev-test" />
+      <module name="jdiff" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.peak6.devtest" />
-      <option name="MAIN_CLASS_NAME" value="com.peak6.devtest.DiffTest" />
+      <option name="PACKAGE_NAME" value="com.jdiff" />
+      <option name="MAIN_CLASS_NAME" value="com.jdiff.DiffTest" />
       <option name="METHOD_NAME" value="testSame" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -346,15 +342,15 @@
     <configuration default="false" name="DiffTest.testAllAdds" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.peak6.devtest.*" />
+          <option name="PATTERN" value="com.jdiff.devtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="peak6-dev-test" />
+      <module name="jdiff" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.peak6.devtest" />
-      <option name="MAIN_CLASS_NAME" value="com.peak6.devtest.DiffTest" />
+      <option name="PACKAGE_NAME" value="com.jdiff" />
+      <option name="MAIN_CLASS_NAME" value="com.jdiff.DiffTest" />
       <option name="METHOD_NAME" value="testAllAdds" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -374,15 +370,15 @@
     <configuration default="false" name="DiffTest.testBothEmpty" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.peak6.devtest.*" />
+          <option name="PATTERN" value="com.jdiff.devtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="peak6-dev-test" />
+      <module name="jdiff" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.peak6.devtest" />
-      <option name="MAIN_CLASS_NAME" value="com.peak6.devtest.DiffTest" />
+      <option name="PACKAGE_NAME" value="com.jdiff" />
+      <option name="MAIN_CLASS_NAME" value="com.jdiff.DiffTest" />
       <option name="METHOD_NAME" value="testBothEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -402,15 +398,15 @@
     <configuration default="false" name="DiffTest.testAllRemoves" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.peak6.devtest.*" />
+          <option name="PATTERN" value="com.jdiff.devtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="peak6-dev-test" />
+      <module name="jdiff" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.peak6.devtest" />
-      <option name="MAIN_CLASS_NAME" value="com.peak6.devtest.DiffTest" />
+      <option name="PACKAGE_NAME" value="com.jdiff" />
+      <option name="MAIN_CLASS_NAME" value="com.jdiff.DiffTest" />
       <option name="METHOD_NAME" value="testAllRemoves" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -436,15 +432,15 @@
     <configuration default="false" name="DiffTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.peak6.devtest.*" />
+          <option name="PATTERN" value="com.jdiff.devtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="peak6-dev-test" />
+      <module name="jdiff" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.peak6.devtest" />
-      <option name="MAIN_CLASS_NAME" value="com.peak6.devtest.DiffTest" />
+      <option name="PACKAGE_NAME" value="com.jdiff" />
+      <option name="MAIN_CLASS_NAME" value="com.jdiff.DiffTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -475,6 +471,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -501,19 +510,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -601,7 +597,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1174" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -614,14 +610,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900834" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1456777" sideWeight="0.6703704" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1456777" sideWeight="0.67099166" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32940108" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -692,47 +688,52 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peak6/devtest/Diff.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jdiff/Diff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1795#1803#0" expanded="true" />
-            <element signature="e#3134#3142#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peak6/devtest/DiffTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jdiff/DiffTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="64" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jdiff/Diff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jdiff/DiffTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="24" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peak6/devtest/Diff.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jdiff/Diff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1795#1803#0" expanded="true" />
-            <element signature="e#3134#3142#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peak6/devtest/DiffTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jdiff/DiffTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="40" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peak6/devtest/Diff.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jdiff/Diff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1795#1803#0" expanded="true" />
-            <element signature="e#3134#3142#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -758,26 +759,37 @@
         <state line="11" column="23" selection-start="342" selection-end="342" vertical-scroll-proportion="0.14577259" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jdiff/Diff.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="658" selection-end="658" vertical-scroll-proportion="0.256167">
+        <state line="221" column="27" selection-start="6743" selection-end="6743" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peak6/devtest/Diff.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jdiff/DiffTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="27" selection-start="6751" selection-end="6751" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1795#1803#0" expanded="true" />
-            <element signature="e#3134#3142#0" expanded="true" />
-          </folding>
+        <state line="30" column="10" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peak6/devtest/DiffTest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="20" selection-start="1264" selection-end="1265" vertical-scroll-proportion="0.21067683">
+        <state line="11" column="9" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/.name">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="52" selection-start="650" selection-end="650" vertical-scroll-proportion="0.29170638">
           <folding />
         </state>
       </provider>

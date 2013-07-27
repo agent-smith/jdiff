@@ -1,13 +1,15 @@
-package com.peak6.devtest;
+package com.jdiff;
 
 import junit.framework.TestCase;
 
 /**
  * Unit tests for Diff.
  */
-public class DiffTest extends TestCase {
+public class DiffTest extends TestCase
+{
 
-    public void testBothEmpty() {
+    public void testBothEmpty()
+    {
         String[] x = new String[] {
         };
         String[] y = new String[] {
@@ -21,7 +23,8 @@ public class DiffTest extends TestCase {
         assertEquals(expectedDiff, actualDiff);
     }
 
-    public void testBothSame() {
+    public void testBothSame()
+    {
         String[] x = new String[] {
                 "This is first line",
                 "lines",
@@ -43,7 +46,8 @@ public class DiffTest extends TestCase {
         assertEquals(expectedDiff, actualDiff);
     }
 
-    public void testAllAdds() {
+    public void testAllAdds()
+    {
         String[] x = new String[] {
         };
         String[] y = new String[] {
@@ -57,16 +61,17 @@ public class DiffTest extends TestCase {
         String actualDiff = lcsDiff.runDiff();
 
         String expectedDiff =
-                "0a1,4\n" +
-                "> This is first line\n" +
-                "> lines\n" +
-                "> \n" +
-                "> And this is the last line.";
+                "0a1,4\n"+
+                        "> This is first line\n"+
+                        "> lines\n"+
+                        "> \n"+
+                        "> And this is the last line.";
 
         assertEquals(expectedDiff, actualDiff);
     }
 
-    public void testAllRemoves() {
+    public void testAllRemoves()
+    {
         String[] x = new String[] {
                 "This is first line",
                 "lines",
@@ -80,16 +85,17 @@ public class DiffTest extends TestCase {
         String actualDiff = lcsDiff.runDiff();
 
         String expectedDiff =
-                "1,4d0\n" +
-                "< This is first line\n" +
-                "< lines\n" +
-                "< \n" +
-                "< And this is the last line.";
+                "1,4d0\n"+
+                        "< This is first line\n"+
+                        "< lines\n"+
+                        "< \n"+
+                        "< And this is the last line.";
 
         assertEquals(expectedDiff, actualDiff);
     }
 
-    public void testDiff() {
+    public void testDiff()
+    {
         String[] x = new String[] {
                 "This is first line",
                 "And then here is a paragraph",
@@ -118,23 +124,24 @@ public class DiffTest extends TestCase {
         String actualDiff = lcsDiff.runDiff();
 
         String expectedDiff =
-                    "1c1\n" +
-                    "< This is first line\n" +
-                    "---\n" +
-                    "> This is new first line\n" +
-                    "4a5,6\n" +
-                    "> several\n" +
-                    "> and even more several\n" +
-                    "7d8\n" +
-                    "< \n" +
-                    "8a10,11\n" +
-                    "> No actually this one is.\n" +
-                    "> ";
+                "1c1\n"+
+                        "< This is first line\n"+
+                        "---\n"+
+                        "> This is new first line\n"+
+                        "4a5,6\n"+
+                        "> several\n"+
+                        "> and even more several\n"+
+                        "7d8\n"+
+                        "< \n"+
+                        "8a10,11\n"+
+                        "> No actually this one is.\n"+
+                        "> ";
 
         assertEquals(expectedDiff, actualDiff);
     }
 
-    public void testLongerDiff() {
+    public void testLongerDiff()
+    {
 
         String[] x = new String[] {
                 "This part of the",
@@ -197,32 +204,32 @@ public class DiffTest extends TestCase {
         String actualDiff = lcsDiff.runDiff();
 
         String expectedDiff =
-                "0a1,6\n" +
-                "> This is an important\n" +
-                "> notice! It should\n" +
-                "> therefore be located at\n" +
-                "> the beginning of this\n" +
-                "> document!\n" +
-                "> \n" +
-                "8,14c14\n" +
-                "< compress the size of the\n" +
-                "< changes.\n" +
-                "< \n" +
-                "< This paragraph contains\n" +
-                "< text that is outdated.\n" +
-                "< It will be deleted in the\n" +
-                "< near future.\n" +
-                "---\n" +
-                "> compress anything.\n" +
-                "17c17\n" +
-                "< check this dokument. On\n" +
-                "---\n" +
-                "> check this document. On\n" +
-                "24a25,28\n" +
-                "> \n" +
-                "> This paragraph contains\n" +
-                "> important new additions\n" +
-                "> to this document.";
+                "0a1,6\n"+
+                        "> This is an important\n"+
+                        "> notice! It should\n"+
+                        "> therefore be located at\n"+
+                        "> the beginning of this\n"+
+                        "> document!\n"+
+                        "> \n"+
+                        "8,14c14\n"+
+                        "< compress the size of the\n"+
+                        "< changes.\n"+
+                        "< \n"+
+                        "< This paragraph contains\n"+
+                        "< text that is outdated.\n"+
+                        "< It will be deleted in the\n"+
+                        "< near future.\n"+
+                        "---\n"+
+                        "> compress anything.\n"+
+                        "17c17\n"+
+                        "< check this dokument. On\n"+
+                        "---\n"+
+                        "> check this document. On\n"+
+                        "24a25,28\n"+
+                        "> \n"+
+                        "> This paragraph contains\n"+
+                        "> important new additions\n"+
+                        "> to this document.";
 
         assertEquals(expectedDiff, actualDiff);
     }

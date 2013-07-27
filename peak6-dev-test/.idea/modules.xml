@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/peak6-dev-test.iml" filepath="$PROJECT_DIR$/peak6-dev-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdiff.iml" filepath="$PROJECT_DIR$/jdiff.iml" />
     </modules>
   </component>
 </project>
