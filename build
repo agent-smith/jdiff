@@ -2,9 +2,13 @@
 
 cmd=mvn
 # Download and install Maven if can't find it in the path
-type -P "$cmd" \ 
-&& echo "$cmd found in path..." \ 
-|| wget http://www.trieuvan.com/apache/maven/maven-3/3.1.0/binaries/apache-maven-3.1.0-bin.tar.gz;tar xvf apache-maven-3.1.0-bin.tar.gz;rm -f apache-maven-3.1.0-bin.tar.gz;cmd=../apache-maven-3.1.0/bin/mvn
+[[ $(type -P "mvnbleh") ]]  && echo "mvn found in path..." || 
+    { 
+        wget http://www.trieuvan.com/apache/maven/maven-3/3.1.0/binaries/apache-maven-3.1.0-bin.tar.gz; 
+        tar xvf apache-maven-3.1.0-bin.tar.gz; 
+        rm -f apache-maven-3.1.0-bin.tar.gz; 
+        cmd=../apache-maven-3.1.0/bin/mvn; 
+    }
 
 # Generate the jar file - this also runs unit tests
 cd jdiff;$cmd clean package
