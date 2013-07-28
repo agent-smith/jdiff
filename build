@@ -1,8 +1,8 @@
 #!/bin/bash
 
 cmd=mvn
-# Download and install Maven if can't find it in the path
-[[ $(type -P "mvnbleh") ]]  && echo "mvn found in path..." || 
+# Run "mvn clean package", or if can't find Maven, then download and install it
+[[ $(type -P "mvn") ]]  && echo "mvn found in path..." || 
     { 
         wget http://www.trieuvan.com/apache/maven/maven-3/3.1.0/binaries/apache-maven-3.1.0-bin.tar.gz; 
         tar xvf apache-maven-3.1.0-bin.tar.gz; 
