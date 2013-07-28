@@ -1,10 +1,120 @@
-In order to build the Diff program and execute unit tests, run the following command first:
+In order to build and run the Diff program, run the following command first:
 > build
 
-This uses wget to download Maven (from here: http://maven.apache.org/download.cgi#Installation).  
+If Maven is not detected, then it will use wget to download Maven first (from here: http://maven.apache.org/download.cgi#Installation).  
 Then, it runs "mvn clean package", which downloads all transitive dependencies, builds a jar file, and executing all unit tests.
 
 Once this is done, you should be able to use the "jdiff.sh" script, which takes 2 parameters (the full paths to the source and target files to diff).
 
-Example:
+Usage:
 > jdiff.sh /full/path/to/sourceFile /full/path/to/targetFile
+
+------------------------------------
+
+This program compares 2 files and outputs the lines and the line numbers where the files differ.
+
+It's implemented as the Longest Common Subsequence (LCS) Problem, with a dynamic programming approach.
+
+See the following article for a full description and example regarding LCS: http://en.wikipedia.org/wiki/Longest_common_subsequence_problem
+
+The set of sequences is given by:
+  lcs[i][j] = 0                              if i = M or j = N
+            = lcs[i+1][j+1] + 1              if x[i]  = y[j]
+            = max(lcs[i][j+1], lcs[i+1][j])  if x[i] != y[j]
+
+Then, once we build the LCS matrix, we trace back through it so we can print out the diff types along the way.
+
+The following rules apply when tracing back through the LCS matrix:
+1) If we moved across M and N an equal amount, then this indicates a change ("c").
+2) If we moved across N, but not M, then this indicates an add ("a").
+3) If we moved across M, but not N, then this indicates a delete ("d").
+
+------------------------------------
+
+Here's an example (taken from: http://en.wikipedia.org/wiki/Diff):
+
+> cat ~/tmp/file1
+This part of the
+document has stayed the
+same from version to
+version.  It shouldn't
+be shown if it doesn't
+change.  Otherwise, that
+would not be helping to
+compress the size of the
+changes.
+
+This paragraph contains
+text that is outdated.
+It will be deleted in the
+near future.
+
+It is important to spell
+check this dokument. On
+the other hand, a
+misspelled word isn't
+the end of the world.
+Nothing in the rest of
+this paragraph needs to
+be changed. Things can
+be added after it.
+
+> cat ~/tmp/file4
+This is an important
+notice! It should
+therefore be located at
+the beginning of this
+document!
+
+This part of the
+document has stayed the
+same from version to
+version.  It shouldn't
+be shown if it doesn't
+change.  Otherwise, that
+would not be helping to
+compress anything.
+
+It is important to spell
+check this document. On
+the other hand, a
+misspelled word isn't
+the end of the world.
+Nothing in the rest of
+this paragraph needs to
+be changed. Things can
+be added after it.
+
+This paragraph contains
+important new additions
+to this document.
+
+> jdiff.sh ~/tmp/file1 ~/tmp/file2
+0a1,6
+> This is an important
+> notice! It should
+> therefore be located at
+> the beginning of this
+> document!
+> 
+8,14c14
+< compress the size of the
+< changes.
+< 
+< This paragraph contains
+< text that is outdated.
+< It will be deleted in the
+< near future.
+---
+> compress anything.
+17c17
+< check this dokument. On
+---
+> check this document. On
+24a25,28
+> 
+> This paragraph contains
+> important new additions
+> to this document.
+
+
