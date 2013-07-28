@@ -6,9 +6,8 @@ Then, it runs "mvn clean package", which downloads all transitive dependencies, 
 
 Once this is done, you should be able to use the "jdiff.sh" script, which takes 2 parameters (the full paths to the source and target files to diff).
 
-Example:
+Usage:
 > jdiff.sh /full/path/to/sourceFile /full/path/to/targetFile
-
 
 ------------------------------------
 
@@ -29,6 +28,8 @@ The following rules apply when tracing back through the LCS matrix:
 1) If we moved across M and N an equal amount, then this indicates a change ("c").
 2) If we moved across N, but not M, then this indicates an add ("a").
 3) If we moved across M, but not N, then this indicates a delete ("d").
+
+------------------------------------
 
 Here's an example (taken from: http://en.wikipedia.org/wiki/Diff):
 
