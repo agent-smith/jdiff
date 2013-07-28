@@ -7,4 +7,4 @@ Then, it runs "mvn clean package", which downloads all transitive dependencies, 
 Once this is done, you should be able to use the "run-diff" script, which takes 2 parameters (the full paths to the source and target files to diff).
 
 Example:
-> run-diff /full/path/to/sourceFile /full/path/to/targetFile
+> jdiff.sh /full/path/to/sourceFile /full/path/to/targetFile
